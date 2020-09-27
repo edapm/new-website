@@ -1,5 +1,15 @@
 module.exports = {
-  someSidebar: {
-    Pages: ['homepage', 'about/about'],
-  },
+  pages: [
+    {
+      type: 'category',
+      label: 'Pages',
+      items: [
+        'about',
+        'contact',
+        {
+          Projects: ['projects/website', 'projects/blog', 'projects/zadok', 'projects/lunchbenching']
+        },
+      ],
+    },
+  ],
 };

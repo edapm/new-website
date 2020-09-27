@@ -5,8 +5,6 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/logo.png',
-  organizationName: 'forgenst', // Usually your GitHub org/user name.
-  projectName: 'new-website', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Forgenst',
@@ -15,29 +13,31 @@ module.exports = {
         src: 'img/logo.png',
       },
       items: [
+        {to: 'https://blog.forgenst.com', label: 'Blog', position: 'right'},
+        { to: 'https://edapm.forgenst.com', label: 'Portfolio', position: 'right' },
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Pages',
-          position: 'left',
-        },
-        {to: 'blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/forgenst',
+          href: 'https://github.com/edapm',
           label: 'GitHub',
           position: 'right',
         },
       ],
     },
     footer: {
-      style: 'dark',
       links: [
         {
           title: 'Pages',
           items: [
             {
-              label: 'Pages',
-              to: 'docs/',
+              label: 'About Me',
+              to: 'pages/',
+            },
+            {
+              label: 'Projects',
+              to: 'pages/projects',
+            },
+            {
+              label: 'Contact Me',
+              to: 'pages/contact-me',
             },
           ],
         },
@@ -46,7 +46,15 @@ module.exports = {
           items: [
             {
               label: 'Blog',
-              to: 'blog',
+              to: 'https://blog.forgenst.com',
+            },
+            {
+              label: 'Portfolio',
+              to: 'https://edapm.forgenst.com',
+            },
+            {
+              label: 'Status',
+              to: 'https://status.forgenst.com',
             },
           ],
         },
@@ -54,8 +62,16 @@ module.exports = {
           title: 'Social',
           items: [
             {
+              label: 'Email',
+              href: 'mailto:ed@forgenst.com?subject=About%20your%20Website',
+            },
+            {
               label: 'GitHub',
               href: 'https://github.com/forgenst',
+            },
+            {
+              label: 'Stack Overflow',
+              href: 'https://stackoverflow.com/users/12993670/edapm',
             },
           ],
         },
@@ -69,15 +85,8 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: 'pages',
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/edapm/new-website/edit/main/website/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/edapm/new-website/edit/main/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

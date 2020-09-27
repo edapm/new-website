@@ -9,6 +9,7 @@ import styles from './styles.module.css';
 const features = [
   {
     title: 'Languages',
+    imageUrl: 'img/icons/python.svg',
     description: (
       <>
         I'm best at HTML, CSS and Python, 
@@ -18,6 +19,7 @@ const features = [
   },
   {
     title: 'Source Control',
+    imageUrl: 'img/icons/git-alt.svg',
     description: (
       <>
         I can also use Git, 
@@ -27,6 +29,7 @@ const features = [
   },
   {
     title: 'Websites',
+    imageUrl: 'img/icons/github-alt.svg',
     description: (
       <>
         I've built my own websites - <a href="https://status.forgenst.com">see a list here</a>. 
@@ -68,7 +71,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/')}>
+              to={useBaseUrl('pages/')}>
               Come on in
             </Link>
           </div>

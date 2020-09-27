@@ -7,7 +7,7 @@ module.exports = {
         'about',
         'contact',
         {
-          Projects: ['projects/website', 'projects/blog', 'projects/zadok', 'projects/lunchbenching']
+          Projects: ['website', 'blog', 'zadok', 'lunchbenching']
         },
       ],
     },

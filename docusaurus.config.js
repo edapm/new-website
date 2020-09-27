@@ -32,10 +32,6 @@ module.exports = {
               to: 'pages/',
             },
             {
-              label: 'Projects',
-              to: 'pages/projects',
-            },
-            {
               label: 'Contact Me',
               to: 'pages/contact-me',
             },
